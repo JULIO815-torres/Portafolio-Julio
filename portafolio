@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Analista de Datos Jr.</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://via.placeholder.com/1920x1080'); /*https://1drv.ms/i/c/cc66a2dd2d9d83d6/EbuLF724MdZHtHGh1FGVI_4BKf-8q150iis0uhEMsr7D1A?e=oX7bkt*/
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+        header {
+            background-color: #4f7ec4;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #586394;
+            padding: 0.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slideDown 1s ease-in-out;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 11px;
+            box-shadow: 0 5px 11px rgba(0, 0, 0, 0.2);
+        }
+        .section {
+            margin-bottom: 2rem;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .section h2 {
+            color: #456196;
+            border-bottom: 2px solid #425794;
+            padding-bottom: 0.5rem;
+
+        }
+        .section p {
+            text-align: justify;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .project {
+            background: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }    
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #4463b9;
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            } 
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portafolio Analista de Datos Jr.</h1> 
+        <p>Julio cesar torres jimenez. 
+            Licenciado en administracion - Especialista 
+            Data Analytics.</p>  
+    </header>
+    
+    <nav>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#technical-skills">Technical Skills</a>       
+        <a href="#Skills">Skills</a>  
+        <a href="#Datos-personales">Datos personales</a>      
+        <a href="#contacto">Contacto</a>           
+    </nav>
+
+    <div class="container">
+        <section id="sobre-mi" class="section">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy Julio César Torres Jiménez, Licenciado en Administración egresado del Tecnológico de Estudios Superiores de Huixquilucan. Estoy interesado en el análisis de datos y la visualización de errores.
+                Mi interés surgió durante mi formación universitaria, ya que realicé mis residencias en la empresa Formularios de México S.A. de C.V., donde desempeñé el puesto de auxiliar de control de residuos industriales. Esta experiencia me llevó a aprender sobre el análisis de datos mediante proyectos realizados tanto para la empresa como para mi titulación, desarrollando un portafolio integral de soluciones analíticas.
+                Mi experiencia incluye apoyo en el análisis estadístico de información para identificar áreas de oportunidad y el desarrollo de dashboards operativos para el monitoreo en tiempo real de procesos, así como dashboards analíticos para la identificación de tendencias y patrones. En cada proyecto, he participado desde la fase inicial de recopilación y limpieza de datos hasta la implementación final.
+                Mi formación en Administración, junto con el apoyo del ingeniero Cuauhtémoc en la empresa Formularios de México, me ha proporcionado conocimientos sobre sistemas de automatización y análisis. Esta versatilidad quedó plasmada en mi proyecto de titulación, donde logré una reducción de costos. El valor inicial de pérdidas era de $130,000 pesos mensuales, y se redujo a $55,000 pesos mensuales, logrando una mejora del 57.69%.</p>  
+        </section>
+
+        <section id="proyectos" class="section">
+            <h2>Proyectos y Portafolio</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="desempeno-financiero.jpg" alt="Análisis de inventario">
+                    <h3>Análisis de inventario</h3>
+                    <p>Un análisis de las órdenes de materia prima con defectos de origen para identificar pérdidas o material no apto para la producción de la empresa Formex, utilizando Excel para detectar tendencias, mejorar procesos y realizar un análisis predictivo que aporte a la toma de decisiones sobre un posible sobreconsumo.</p>
+                    <a href="#" target="">Ver proyecto </a>  
+                </div>
+
+                <div class="project">
+                    <img src="desempeno-financiero.jpg" alt="Dashboard de power BI">
+                    <h3>Dashboard de power BI</h3>
+                    <p>Creación de un dashboard interactivo en Power BI para el monitoreo de consumos.</p>
+                    <a href="#" target="_blank">Ver proyecto</a>
+                </div>
+              
+                <div class="project">
+                    <img src="desempeno-financiero.jpg" alt="Modelo de Predicción de sobreconsumo">
+                    <h3>Modelo de Predicción de sobreconsumo</h3>
+                    <p>Desarrollo de un modelo de predicción utilizando bases de datos en Access y Excel, analizando datos mediante su recopilación y limpieza, e identificando tendencias, patrones y anomalías que proporcionen información valiosa para la disminución de errores en la empresa.</p>
+                    <a href="#" target="https://1drv.ms/x/c/cc66a2dd2d9d83d6/EdJdtoSPeWNNkhJyRLXotvIB_-FM9yB2ewu1GXBCrGMDng?e=qXMg7f"> Ver proyecto</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="Skills" class="section">
+            <h2>Technical Skills</h2>
+            </p>Microsoft Office.
+            </p>Microsoft Excel Intermedio.
+            </p>Microsoft Power BI.
+            </p>Base de Datos SQL.
+
+            <section id="Soft Skills" class="section">
+                <h2>Skills</h2>
+                </p>Comunicacion efectiva. [80%]
+                </p>Trabajo en equipo.  [90%]
+                </p>Adapabilidad y flexibilidad.[90%]
+                </p>Etica y Responsabilidad.[90%]
+                </p>Gestion del estres.[85%]
+
+                <section id="Datos personales" class="section">
+                    <h2>Datos personales</h2>
+                    </p>Telefono:    554668507.
+                    </p>Direccion:   Ricardo flores magon EDOMEX y Sur 115A juventino rosas CDMX.
+                    </p>Cargo:       Auxiliar de reciduos peligrosos en area de calidad.
+                    </p>Cumpleaños:  02-02-2001
+                    
+    
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Si deseas contactarme por correo o numero telefonico, puedes escribirme a </a> <a href="Correo:">julioctj32@icloud.com</a> </a>o conectar conmigo en <a href="#" target="file:///C:/Users/julio/Downloads/occqr.pdf">OCC </a>.</p>
+        </section> 
+    </div>
+
+    <footer>
+        <p>&copy; 2025. Analista de Datos Jr.</p>
+    </footer>
+</body>
+</html>
